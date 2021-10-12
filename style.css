@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-image: url("texture.png");
+}
+article>span{
+	color: white;
+}
+header>section:nth-child(1){
+	display: flex;
+	justify-content: space-between;
+}
+
+
+header>section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+header>section>button, nav>button{
+	color: white;
+	border-style: none;
+	text-shadow: 1px 1px 2px black;
+}
+header>section>button:nth-child(1) {background-color: skyblue ;}
+
+header>section>button:nth-child(2) {background-color: greenyellow ;}
+
+header>section>button:nth-child(3) {background-color: yellow ;}
+
+header>section>button:nth-child(4) {background-color: fuchsia ;}
+
+header>section>button:nth-child(5) {background-color: red ;}
+
+header>section>button:nth-child(6) {background-color: blue ;}
+header>section>img {
+	max-height: 55px;
+
+}
+header>section>button {
+	height: 60px;
+	border-style:none;
+	color: white;
+}
+
+/*Основная часть*/
+body>section{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	margin-top: 20px;
+}
+nav{
+	display: flex;
+	flex-direction: column;
+	
+}
+nav>button{
+	background-color: lightsalmon;
+	margin-bottom: 5px;
+	height: 70px;
+
+}
+main{
+	margin-left: 20px;
+
+}
+main>article{
+	position: relative;
+}
+main>article>img{
+max-width: 100%;
+}
+
+main>article>h1{
+	
+	color: red;
+	font-size: 48px;
+	top: 50%;
+	left: 50%;position: absolute;
+	transform: translate(-50% ,-50%);
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}	
+h2{
+	font-size: 30px;
+	text-align: center ;
+	margin: 20px 0;
+	color: white;
+}
+
+.info{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+
+}
+.advantages{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	
+}
+.advantages img{
+	margin: 0 25%;
+	max-width: 50%;
+}
+
+.info>p{
+	padding: 20px;
+	text-align: center;
+}
+.orange{
+	background-color: orange;
+	
+}
+.cyan{
+	background-color: cyan;
+	
+}
+.red{
+	background-color: red;
+	padding: 20px;
+	}
+.green{
+	background-color: green;
+	padding: 20px;
+}
+.yellow{
+	background-color: yellow;
+	
+	padding: 20px;
+}
+
+/*Подвал*/
+footer{
+	
+	background-color: rgba(50, 50, 50, 0.75);
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+
+}
+footer>article>span{
+	padding: 10px 15px;
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+
+}
+footer>p{
+	color: black;
+}
